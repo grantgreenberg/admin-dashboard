@@ -73,20 +73,20 @@ body {
     margin-right: 0.5rem;
     grid-area: spyglass;
     fill: var(--main-color);
+    justify-self: end;
 }
 
 .search input {
     border: 1px solid var(--main-color);
     border-radius: 5px;
     height: 2.5rem;
-    width: 80%;
+    width: 75%;
     padding: 2px 10px 2px 10px;
     outline: 0;
     background-color: var(--main-color);
     color: var(--main-white);
     font-size: 1.25rem;
     grid-area: searchbar;
-    justify-self: start;
 }
 
 .search input:hover, .search input:focus {
@@ -180,9 +180,9 @@ body {
     padding: 0.75rem 1.5rem;
     background-color: var(--dark-accent-color);
     color: var(--main-white);
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
     font-size: 1rem;
-    border: 1px solid var(--dark-accent-color);
+    border: 3px solid var(--dark-accent-color);
 }
 
 .new-action {
@@ -197,7 +197,7 @@ body {
     background-color: var(--main-color);
 }
 
-/* Sidebar Formatting */
+/*** Sidebar Formatting ***/
 
 .sidebar {
     background-color: var(--main-gray);
@@ -205,6 +205,77 @@ body {
     margin: 0.2rem;
     border-radius: 0.25rem;
     grid-area: sidebar;
+}
+
+/* Announcements Formatting */
+
+.announcements .sidebar-card {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-template-areas:
+        "sidebar-title1"
+        "sidebar-title2"
+        "sidebar-title3";
+        gap: 1rem;
+}
+
+.announcements .sidebar-card div:first-child {
+    grid-area: sidebar-title1;
+    border-bottom: 2px solid var(--dark-accent-color);
+    padding: 1rem;
+}
+
+.announcements .sidebar-card div:nth-child(2){
+    grid-area: sidebar-title2;
+    border-bottom: 2px solid var(--dark-accent-color);
+    padding: 1rem;
+}
+
+.announcements .sidebar-card div:last-child {
+    grid-area: sidebar-title3;
+    padding: 1rem;
+}
+
+.announcements .sidebar-title {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.announcements .sidebar-card div p:last-child {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+/* Trending Formatting */
+
+.trending .sidebar-card div {
+    display: grid;
+    grid-template: 2fr / 1fr 4fr;
+    grid-template-areas: 
+        "svg trend-id"
+        "svg trend-desc";
+    justify-items: start;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.trending .sidebar-card div svg {
+    grid-area: svg;
+}
+
+.trend-id {
+    grid-area: trend-id;
+    font-size: 1rem;
+    font-weight: 600;
+    align-self: end;
+    line-height: 0;
+}
+
+.trend-desc {
+    grid-area: trend-desc;
+    font-size: 1rem;
+    align-self: start;
 }
 
 .article {
