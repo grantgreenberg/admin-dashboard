@@ -248,6 +248,10 @@ body {
 
 /* Trending Formatting */
 
+.trending {
+    margin-top: 1.5rem;
+}
+
 .trending .sidebar-card div {
     display: grid;
     grid-template: 2fr / 1fr 4fr;
@@ -286,6 +290,42 @@ body {
     margin: 0.2rem;
     border-radius: 0.25rem;
     grid-area: article;
+    display: grid;
+    grid-template: 1fr repeat(3, 3fr) / repeat(2, 1fr);
+    grid-template-areas: 
+        "heading heading"
+        "card1 card2"
+        "card3 card4"
+        "card5 card6";
+    gap: 1rem;
+}
+
+.article .heading {
+    grid-area: heading;
+}
+
+.article div:nth-child(even) {
+    border-left: 5px solid var(--accent-color);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.article div:nth-child(odd) {
+    border-left: 5px solid var(--dark-accent-color);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.article div:nth-child(5) {
+    border-left: 5px solid var(--accent-color);
+}
+
+.article div:nth-child(4) {
+    border-left: 5px solid var(--dark-accent-color);
+}
+
+.article div p.title {
+    font-size: 1rem;
+    font-weight: 800;
+    align-self: center;
 }
 
 /* Generic Formatting MOVE TO TOP */
