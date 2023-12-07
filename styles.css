@@ -278,6 +278,8 @@ body {
     align-self: start;
 }
 
+/*** Article Formatting ***/
+
 .article {
     background-color: var(--main-gray);
     padding: 1rem;
@@ -285,6 +287,8 @@ body {
     border-radius: 0.25rem;
     grid-area: article;
 }
+
+/* Generic Formatting MOVE TO TOP */
 
 h2 {
     color: var(--main-color);
