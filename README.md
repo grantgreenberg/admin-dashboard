@@ -1,1 +1,5 @@
-# admin-dashboard
+# Admin Dashboard Project
+
+This admin dashboard project showcases a responsive and visually appealing interface with a range of features for efficient administration. The dashboard includes a search bar, user profile information, action buttons, and a navigation menu with various sections. The use of SVG icons enhances the overall design and user experience. The project utilizes HTML for structure and CSS for styling, ensuring a clean and modern look. The dashboard is divided into a main content area, a navigation sidebar, and sections for announcements, trending topics, and user projects. Noteworthy techniques employed include flexbox and grid layout for responsive design, Google Fonts for typography, and SVG icons for scalable and high-quality graphics. The sidebar dynamically displays announcements and trending topics, while the main content area elegantly presents user projects with interactive icons for actions such as favoriting, downloading, and sharing. This admin dashboard project is a testament to effective front-end development practices, combining aesthetics with functionality.
+
+[Live Version](https://grantgreenberg.github.io/admin-dashboard/)
