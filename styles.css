@@ -98,6 +98,11 @@ li {
 .nav ul li:hover {
     color: var(--accent-color);
     font-weight: 800;
+    cursor: pointer;
+}
+
+.nav ul li:hover svg {
+    fill: var(--accent-color);
 }
 
 .nav-icon {
@@ -107,7 +112,14 @@ li {
     fill: var(--main-white);    
 }
 
+.nav div:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
 
+.nav div:hover svg {
+    fill: var(--accent-color);
+}
 
 /*** Header Formatting ***/
 
@@ -197,6 +209,7 @@ li {
 .notif:hover,
 .icon:hover {
     fill: var(--accent-color);
+    cursor: pointer;
 }
 
 /* Hello Formatting */
@@ -219,6 +232,7 @@ li {
 
 .large-icon:hover {
     fill: var(--accent-color);
+    cursor: pointer;
 }
 
 .hello-txt {
@@ -263,6 +277,7 @@ li {
 
 .action-buttons button:hover {
     background-color: var(--main-color);
+    cursor: pointer;
 }
 
 /*** Sidebar Formatting ***/
@@ -328,8 +343,14 @@ li {
         "svg trend-desc";
     justify-items: start;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     gap: 0.5rem;
+}
+
+.trending .sidebar-card div p.trend-id:hover {
+    color: var(--dark-accent-color);
+    font-weight: 900;
+    cursor: pointer;
 }
 
 .trending .sidebar-card div svg {
@@ -340,14 +361,11 @@ li {
     grid-area: trend-id;
     font-size: 1rem;
     font-weight: 600;
-    align-self: end;
-    line-height: 0;
 }
 
 .trend-desc {
     grid-area: trend-desc;
     font-size: 1rem;
-    align-self: start;
 }
 
 /*** Article Formatting ***/
@@ -411,14 +429,15 @@ li {
 }
 
 .card div svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     fill: var(--dark-accent-color);
     margin-right: 1.5rem;
 }
 
 .card div svg:hover {
     fill: var(--main-color);
+    cursor: pointer;
 }
 
 
